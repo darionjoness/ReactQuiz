@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --primary-color:#91D8E4 ;
+  --secondary-color: #82AAE3;
+  --third-color: #EAFDFC;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body{
+  background-color: #f4f4f4;
+}
+
+.header{
+  text-align: center;
+  margin: 45px 0;
+  font-size: 2.5rem;
+}
+
+.quizQuestions{
+  background-color: var(--third-color);
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.question h2{
+  margin: 20px 0;
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.question img{
+  width: 150px;
+  margin: 20px 0;
+}
+
+.answers{
+  text-align: left;
+}
+
+.answer{
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.answer input{
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nextBtn{
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.nextBtn:active{
+  transform:scale(0.98);
+}
+
+.finalScore{
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.notAnswered{
+  text-align: center;
+  color: red;
+  margin: 10px 0;
+}
+
+
+
+
